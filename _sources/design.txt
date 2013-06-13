@@ -1,7 +1,8 @@
 .. sectnum::
+   :start: 3
 
 
-Design Blueprint
+Design: Blueprint
 ========================================
 
 Features
@@ -26,6 +27,9 @@ Difference to other efforts
 ---------------------
 
 This system is different form other efforts as it allows to run HPC, Eucalyptus and OpenStack services on the same cluster. 
+
+Component View
+---------------
 
 Our design includes four different commonent portions:
 
@@ -65,27 +69,27 @@ Our design focusses on satisfying our various user communities by providing four
 .. figure:: images/Slide02.png
    :align: center
 
-   **Figure:** The caption for 02
+   **Figure:** The component view of the design
+
+
+
 
 .. figure:: images/Slide03.png
    :align: center
 
-   **Figure:** The caption for 03
+   **Figure:** The subcomponents of the design
+
+Component User Management
+-------------------------
 
 .. figure:: images/Slide05.png
    :align: center
    :scale: 50%
 
-   **Figure:** The caption for 05
-
-.. figure:: images/Slide15.png
-   :align: center
-   :scale: 50%
-
-   **Figure:** The caption for 15
+   **Figure:** The subcomponent user management
 
 User Management
-----------------------------------------
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 We reused scripts from before that were not properly done, but carried us over. Limits of these scripts have been reached in regards to 
 
@@ -127,8 +131,8 @@ Can be done as part of ongoing work, less than a day
   * Idea. Create master LDAP tree, from which we copy into active and deactive user trees.
      * This was actually suggested by Archit way back, but was rejected at that time.
 
-Accounting
-----------
+Accounting (Will not be worked on much)
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 * New development of accounting 
     * Cloud Metric (hyungro):
@@ -141,33 +145,9 @@ Accounting
 * XSEDE tests and updates
       * Interact with xsede (one phone call every week)
 
-Interfaces
-----------
 
-* Portal
-* Freeze development as much as possible
-* Focus on metric integration, status update, project page improvements
-* Shift focus on content
-* URL management needs to be improved
-* Not all features of the portal have been properly communicated to users or and the portal framework has not been properly integrated into our processes leading to a confusion on users and staff side.
-   * A) Example automatic forum posts to blogs
-   * B) Some in our own team do not use the portal and we miss clear opportunities of improvements
-   * C) Redesign of project information shows that information in projects has been removed that is essential but this removal leads now to confusion in project application process. 
-* There are more.
-* Fix: Fugang, Allan, Gregor, will join Carrie and Barbara for 5-7 business days to get most technical issues resolved, so we can focus on content after that.
-   * Remaining tasks will be identified.
-      * I expect small fixes need to be done.
-      * Some new aspects of the portal are to be improved
-      * Some god things from the xsede portal was not implemented in our portal over the last year
-* Command line & API
-   * Use uniformly CMD3 (developed by Gregor)
-      * Will provide clean command line tool
-      * Automatically delivers a shell
-   * REST services via flask (cloudmesh)
-   * Integration with OpenID via CRWOD (demonstrated by Gregor)
-   * Focus on cloudmesh abstraction and inventory to manage multiple clouds, rain, and resources for shifting/reprovisioning. 
-   * Will be ongoing principal
-
+Component Resource Management (includes cloudshifting as part of reservation)
+-------------------------------------------------------------------
 
 Resource Management
 --------------------
@@ -208,4 +188,40 @@ Scheduler
    * Provide abstraction to bare metal provisioning so we are independent from teefaa, openstack bare metal, moab, slurm, cobler bare metal provisioning. Provide only absolute necessary
        *  Biggest issue is that we have ongoing production and that both ways require essentially a *vanilla* cluster
        *  Networking 
+
+.. figure:: images/Slide15.png
+   :align: center
+   :scale: 50%
+
+   **Figure:** The Subcompoenet for resource management
+
+
+
+Interfaces
+----------
+
+* Portal
+* Freeze development as much as possible
+* Focus on metric integration, status update, project page improvements
+* Shift focus on content
+* URL management needs to be improved
+* Not all features of the portal have been properly communicated to users or and the portal framework has not been properly integrated into our processes leading to a confusion on users and staff side.
+   * A) Example automatic forum posts to blogs
+   * B) Some in our own team do not use the portal and we miss clear opportunities of improvements
+   * C) Redesign of project information shows that information in projects has been removed that is essential but this removal leads now to confusion in project application process. 
+* There are more.
+* Fix: Fugang, Allan, Gregor, will join Carrie and Barbara for 5-7 business days to get most technical issues resolved, so we can focus on content after that.
+   * Remaining tasks will be identified.
+      * I expect small fixes need to be done.
+      * Some new aspects of the portal are to be improved
+      * Some god things from the xsede portal was not implemented in our portal over the last year
+* Command line & API
+   * Use uniformly CMD3 (developed by Gregor)
+      * Will provide clean command line tool
+      * Automatically delivers a shell
+   * REST services via flask (cloudmesh)
+   * Integration with OpenID via CRWOD (demonstrated by Gregor)
+   * Focus on cloudmesh abstraction and inventory to manage multiple clouds, rain, and resources for shifting/reprovisioning. 
+   * Will be ongoing principal
+
 

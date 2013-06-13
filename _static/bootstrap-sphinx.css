@@ -30,6 +30,12 @@ body {
   padding-right: 12px !important;
 }
 
+@media (min-width: 980px) {
+  .navbar h3 a, .navbar .brand {
+    background: transparent url("fg-logo-white-24x36.png") no-repeat 22px 3px;
+    padding-left: 62px;
+  }
+}
 
 table {
   border: 0;
