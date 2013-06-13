@@ -165,13 +165,15 @@ Teefaa 2 (status unclear):
      Teefaa was enhanced to integrate a mechnism for developing an
      image on a local laptop so that the image can than be snapshotted
      and placed onto a cluster so that bare metal provisioning can be
-     achieved from this image. Gregor believes from conversation that
-     this has been used and or is installed in some fashion on India.
+     achieved from this image. Based on previous conversation 
+     this verasin was or is installed in some fashion on India. A
+     clarification is needed.
 
 Teefaa 3 (status unclear):
       Much of Teefaa 2 was developed mostly in shell, some aspects of
       it are developed better in python. Teefaa 3 provides an attempt
-      to deliver a mostly python based implementation.
+      to deliver a mostly python based implementation. It is unclear
+      if this code has been used or is installed on india.
      
 Cloudmesh Inventory: 
       FG Move contains a simple inventory that is not suffcient to
