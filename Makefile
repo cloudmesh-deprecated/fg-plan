@@ -89,6 +89,7 @@ clean:
 
 sphinx:
 	cd doc; make html
+	open doc/build/html/index.html
 
 #############################################################################
 # PUBLISH GIT HUB PAGES

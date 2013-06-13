@@ -1,5 +1,5 @@
 .. sectnum::
-
+   :start: 2
 
 
 Plan: Cloudmesh Service Shift
@@ -50,19 +50,22 @@ methodology. Once we agree on tasks they will be filed in jira
     "2", "1", "Agile Project meeting", "daily", "All", "A daily meeting to assure
     we are on track with the project. 10 minutes max, on google
     hangout. Just status updates and correcting plans.", "TBD" 
-    "3", "4", "OpenStack BareMetal Test", "06/30", "K. Tanaka", "Deliver a Grizzly
+    "3", "4", "OpenStack BareMetal Test", "06/30", "Tanaka", "Deliver a Grizzly
     OpenStack with bare metal provisioning on a test cluster with at
     least 4 servers. Ideally would be 8", "TBD"
-    "5", "3", "OpenStack BareMetal Production", "07/20", "K. Tanaka", "Deliver a Grizzly
+    "5", "3", "OpenStack BareMetal Production", "07/20", "Tanaka", "Deliver a Grizzly
     OpenStack with bare metal provisioning on part of India with at
     least 16 servers so we can test this in production.", "TBD"
-    "6", "1", "Inventory", "06/30", "A. Streib, G. von Laszewski","Deliver the inventory service inclusing a first flask framework
+    "6", "1", "Inventory", "06/30", "Streib, Laszewski","Deliver the inventory service inclusing a first flask framework
     to display the content of the inventory and integration to CMD3.", "TBD"
-    "7.1", "6", "Shift Openstack service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.1", "6", "Shift Openstack service nodes", "07/30", "Streib,
+    Tanaka, Laszewski","Deliver the shifting commandline abstraction that uses the
     OpenStack service nodes.", "TBD"
-    "7.2", "6", "Shift Eucalyptus service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.2", "6", "Shift Eucalyptus service nodes", "07/30", "Streib,
+    Tanaka, Laszewski","Deliver the shifting commandline abstraction that uses the
     Eucalyptus service nodes.", "TBD"
-    "7.3", "6", "Shift HPC service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.3", "6", "Shift HPC service nodes", "07/30", "Streib,
+    Tanaka, Laszewski","Deliver the shifting commandline abstraction that uses the
     HPC service nodes.", "TBD"
 
 
@@ -70,13 +73,13 @@ methodology. Once we agree on tasks they will be filed in jira
     :header: "No.","<-","Task","Delivery","Staffing","Description","Jira"
     :widths: 2,2,10,3,5,30,3
 
-    "4", "1", "Teefaa Production", "06/20", "K. Tanaka", "Clarify the use of
+    "4", "1", "Teefaa Production", "06/20", "Tanaka", "Clarify the use of
     Teefaa in Production in regards to Teefaa used in FGMove and
     Teefaa without FGMove. Put in production and interact with the
     team.", "TBD"
-    "8", "1", "RAIN Production", "06/30", "F. Wang, K. Tanaka","Make sure the
+    "8", "1", "RAIN Production", "06/30", "Wang, Tanaka","Make sure the
     current RAin is in production.", "TBD"
-    "9", "8", "RAIN Move", "06/30", "F. Wang, K. Tanaka","Identif the
+    "9", "8", "RAIN Move", "06/30", "Wang, Tanaka","Identif the
     current state of FG MOve and bring in production if we identify it
     to be useful.", "TBD"
     "10","all", "Demonstration", "08/30", "All", "Demonstrate Cloud
