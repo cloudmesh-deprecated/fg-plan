@@ -346,7 +346,7 @@ current RAin is in production.</td>
 <td>06/30</td>
 <td>Wang, Tanaka</td>
 <td>Identif the
-current state of FG MOve and bring in production if we identify it
+current state of FG Move and bring in production if we identify it
 to be useful.</td>
 <td>TBD</td>
 </tr>
@@ -357,6 +357,15 @@ to be useful.</td>
 <td>All</td>
 <td>Demonstrate Cloud
 Shifting of HPC, Eucalyptus and OpenStack services</td>
+<td>TBD</td>
+</tr>
+<tr class="row-even"><td>11</td>
+<td>1</td>
+<td>RAIN Hardware Broken</td>
+<td>06/20</td>
+<td>Tanaka</td>
+<td>Fixing the hardware issues on the
+machines for RAIN</td>
 <td>TBD</td>
 </tr>
 </tbody>
@@ -396,7 +405,7 @@ frameworks to simplify development and reduce the time for deployment.</p>
 <div class="section" id="definitions-and-acronyms">
 <h2><a class="toc-backref" href="#id8">2.5&nbsp;&nbsp;&nbsp;Definitions and Acronyms</a><a class="headerlink" href="#definitions-and-acronyms" title="Permalink to this headline">¶</a></h2>
 <dl class="docutils">
-<dt>FG Rain (in production?):</dt>
+<dt>FG Rain (in production?, Hardware Issues?):</dt>
 <dd>FutureGrid Rain is a tool that will allow users to place customized
 environments like virtual clusters or IaaS frameworks onto
 resources. The process of raining goes beyond the services offered
@@ -405,7 +414,7 @@ targeting virtualized and non-virtualized resources. Rain will be
 able to move resources from one infrastructure to another and
 compare the execution of an experiment in the different supported
 infrastructures.</dd>
-<dt>FG Move (in production?):</dt>
+<dt>FG Move (in production?, Hardware issues?):</dt>
 <dd>is a service that enables physical resources re-allocation among
 infrastructures. By using a simple command line interface, this
 service is able to de-register a machine from a particular
@@ -421,23 +430,34 @@ obtain detailed information about a particular infrastructure.</dd>
 changing over time thus we need as part of this plan to identify
 more clearly what it is. We have three different versions of
 Teefaa that are currently used and/or developed.</dd>
-<dt>Teefaa 1 (in production?):</dt>
+<dt>Teefaa 1 (in production, TBD?):</dt>
 <dd>In the first version of teefaa the focus was layed on bare metal
 provisioning of the OS while utilizing the scheduling system. As
 we wanted to be independent from XCAT and MOAB this was achieved
 by integrating it into TORQUE. Teefaa is used as part of FG Move.</dd>
-<dt>Teefaa 2 (status unclear):</dt>
+<dt>Teefaa 2 (status TBD):</dt>
 <dd>Teefaa was enhanced to integrate a mechnism for developing an
 image on a local laptop so that the image can than be snapshotted
 and placed onto a cluster so that bare metal provisioning can be
 achieved from this image. Based on previous conversation
 this verasin was or is installed in some fashion on India. A
 clarification is needed.</dd>
-<dt>Teefaa 3 (status unclear):</dt>
+<dt>Teefaa 3 (status TBD):</dt>
 <dd>Much of Teefaa 2 was developed mostly in shell, some aspects of
 it are developed better in python. Teefaa 3 provides an attempt
 to deliver a mostly python based implementation. It is unclear
-if this code has been used or is installed on india.</dd>
+if this code has been used or is installed on india. This
+version of teefa uses a self written subprocess handler that
+exists already via others.</dd>
+<dt>Teefaa 4 (status TBD):</dt>
+<dd>Much of Teefaa 2 was developed mostly in shell, some aspects of
+it are developed better in python. Teefaa 4 provides an attempt
+to deliver a mostly python based implementation. It is unclear
+if this code has been used or is installed on india. Some
+bittorrent functionality to distribute images are included and
+the use of fabric which is heavily used by cloudmesh developers
+is introduced. Fabric as is may have some scaleblity problems,
+but we will not hit them with our small clusters.</dd>
 <dt>Cloudmesh Inventory:</dt>
 <dd>FG Move contains a simple inventory that is not suffcient to
 deal with all of our needs. Cloudmesh inventory separates the

@@ -80,11 +80,12 @@ methodology. Once we agree on tasks they will be filed in jira
     "8", "1", "RAIN Production", "06/30", "Wang, Tanaka","Make sure the
     current RAin is in production.", "TBD"
     "9", "8", "RAIN Move", "06/30", "Wang, Tanaka","Identif the
-    current state of FG MOve and bring in production if we identify it
+    current state of FG Move and bring in production if we identify it
     to be useful.", "TBD"
     "10","all", "Demonstration", "08/30", "All", "Demonstrate Cloud
     Shifting of HPC, Eucalyptus and OpenStack services", "TBD"
-
+    "11","1","RAIN Hardware Broken", "06/20","Tanaka", "Fixing the hardware issues on the
+    machines for RAIN", "TBD"
 
 
 
@@ -127,7 +128,7 @@ Flask_cm:
 Definitions and Acronyms
 -------------------------------
 
-FG Rain (in production?):
+FG Rain (in production?, Hardware Issues?):
    FutureGrid Rain is a tool that will allow users to place customized
    environments like virtual clusters or IaaS frameworks onto
    resources. The process of raining goes beyond the services offered
@@ -137,7 +138,7 @@ FG Rain (in production?):
    compare the execution of an experiment in the different supported
    infrastructures.
 
-FG Move (in production?):  
+FG Move (in production?, Hardware issues?):  
    is a service that enables physical resources re-allocation among
    infrastructures. By using a simple command line interface, this
    service is able to de-register a machine from a particular
@@ -155,13 +156,13 @@ Teefaa:
     more clearly what it is. We have three different versions of
     Teefaa that are currently used and/or developed.
 
-Teefaa 1 (in production?):
+Teefaa 1 (in production, TBD?):
      In the first version of teefaa the focus was layed on bare metal
      provisioning of the OS while utilizing the scheduling system. As
      we wanted to be independent from XCAT and MOAB this was achieved
      by integrating it into TORQUE. Teefaa is used as part of FG Move.
 
-Teefaa 2 (status unclear):
+Teefaa 2 (status TBD):
      Teefaa was enhanced to integrate a mechnism for developing an
      image on a local laptop so that the image can than be snapshotted
      and placed onto a cluster so that bare metal provisioning can be
@@ -169,11 +170,23 @@ Teefaa 2 (status unclear):
      this verasin was or is installed in some fashion on India. A
      clarification is needed.
 
-Teefaa 3 (status unclear):
+Teefaa 3 (status TBD):
       Much of Teefaa 2 was developed mostly in shell, some aspects of
       it are developed better in python. Teefaa 3 provides an attempt
       to deliver a mostly python based implementation. It is unclear
-      if this code has been used or is installed on india.
+      if this code has been used or is installed on india. This
+      version of teefa uses a self written subprocess handler that
+      exists already via others.
+
+Teefaa 4 (status TBD):
+      Much of Teefaa 2 was developed mostly in shell, some aspects of
+      it are developed better in python. Teefaa 4 provides an attempt
+      to deliver a mostly python based implementation. It is unclear
+      if this code has been used or is installed on india. Some
+      bittorrent functionality to distribute images are included and
+      the use of fabric which is heavily used by cloudmesh developers
+      is introduced. Fabric as is may have some scaleblity problems,
+      but we will not hit them with our small clusters.
      
 Cloudmesh Inventory: 
       FG Move contains a simple inventory that is not suffcient to
