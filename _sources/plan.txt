@@ -61,7 +61,7 @@ methodology. Once we agree on tasks they will be filed in jira
     "7.2", "6", "Shift Eucalyptus service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
     Eucalyptus service nodes.", "TBD"
     "7.3", "6", "Shift HPC service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
-    HPC service nodes.", "TBD", 
+    HPC service nodes.", "TBD"
 
 
 .. csv-table:: Production Oriented Tasks
