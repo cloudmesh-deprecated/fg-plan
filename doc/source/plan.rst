@@ -54,13 +54,13 @@ methodology. Once we agree on tasks they will be filed in jira
     "5", "3", "OpenStack BareMetal Production", "07/20", "K. Tanaka", "Deliver a Grizzly
     OpenStack with bare metal provisioning on part of India with at
     least 16 servers so we can test this in production.", "TBD"
-    "6", "1", "Inventory", "06/30", "A. Streib, G, von Laszewski","Deliver the inventory service inclusing a first flask framework
+    "6", "1", "Inventory", "06/30", "A. Streib, G. von Laszewski","Deliver the inventory service inclusing a first flask framework
     to display the content of the inventory and integration to CMD3.", "TBD"
-    "7.1", "6", "Shift Openstack service nodes", "07/30", "A. Streib, G, von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.1", "6", "Shift Openstack service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
     OpenStack service nodes.", "TBD"
-    "7.2", "6", "Shift Eucalyptus service nodes", "07/30", "A. Streib, G, von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.2", "6", "Shift Eucalyptus service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
     Eucalyptus service nodes.", "TBD"
-    "7.3", "6", "Shift HPC service nodes", "07/30", "A. Streib, G, von Laszewski","Deliver the shifting commandline abstraction that uses the
+    "7.3", "6", "Shift HPC service nodes", "07/30", "A. Streib, G. von Laszewski","Deliver the shifting commandline abstraction that uses the
     HPC service nodes.", "TBD", 
 
 
