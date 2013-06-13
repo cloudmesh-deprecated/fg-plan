@@ -35,6 +35,8 @@ Production Objectives
 Project Deliverables
 -------------------
 
+Test
+
 Note this table will be adapted as part of our agile development
 methodology. Once we agree on tasks they will be filed in jira
 
