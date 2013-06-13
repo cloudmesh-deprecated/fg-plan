@@ -2,7 +2,7 @@
    :start: 3
 
 
-Design Blueprint
+Design: Blueprint
 ========================================
 
 Features

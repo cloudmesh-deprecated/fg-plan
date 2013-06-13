@@ -41,7 +41,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'Cloudmesh Plan'
+project = u'Cloudmesh'
 copyright = u'2013, Gregor von Laszewski for  FutureGrid'
 
 # The version info for the project you're documenting, acts as replacement for
@@ -106,7 +106,7 @@ html_theme = 'bootstrap'
 #html_theme_options = {}
 html_theme_options = {
     # Navigation bar title. (Default: ``project`` value)
-    'navbar_title': "Cloudmesh Plan",
+    'navbar_title': "Cloudmesh",
 
     # Tab name for entire site. (Default: "Site")
     'navbar_site_name': "Site",
@@ -160,7 +160,7 @@ html_theme_path = sphinx_bootstrap_theme.get_html_theme_path()
 
 # The name of an image file (relative to this directory) to place at the top
 # of the sidebar.
-#html_logo = None
+html_logo = "images/fg-logo-white-24x36.png"
 
 # The name of an image file (within the static path) to use as favicon of the
 # docs.  This file should be a Windows icon file (.ico) being 16x16 or 32x32
